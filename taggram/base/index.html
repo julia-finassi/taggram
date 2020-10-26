@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Taggram</title>
+
+	<!-- O normalize ajuda a reduzir a diferença de estilo entre os navegadores -->
+	<link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
+	<link rel="shortcut icon" href="src/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script 
+		src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" 
+		integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" 
+		crossorigin="anonymous">
+	</script>
+
+	<script src="index.js"></script>
+</head>
+
+<body class="body">
+
+	<header class="header">
+		<div class="header__container">
+			<img class="logo" src="../base/src/taggramlogo.png" alt="Taggram">
+			<div class="current-user">
+				<div class="current-user__username" id="current-user-username"></div>
+				<div class="current-user__avatar" id="current-user-avatar"></div>
+			</div>
+		</div>
+	</header> 
+	
+	<main class="post">
+
+		<div class="photo" id="current-post-photo"></div>
+		<div class="comments-header">
+			<div class="author-avatar" id="current-post-avatar">
+			</div>
+			<div class="author-name" id="current-author-name">
+			</div>
+			<div class="author-location" id="current-author-location">
+			</div>
+		</div>
+
+		<div class="comments-list" id="current-post-comments">
+		</div>
+
+		<div class="comments-footer">
+			<div class="comments-count" id="comments-count">
+			</div>
+			<div class="comments-date" id="current-post-date">
+				
+			</div>
+			<div class="comments-footer-border"></div>
+			<input class="writeComment"type="text" id="commentId" name="writeComment" placeholder="Hello World!">
+			<a class="enviar">Enviar</a>
+		</div>
+
+	</main>
+
+	<div class="tagview">
+		<img src="../base/src/tagview.png" alt="Taggram">
+	</div>
+
+</body>
+
+</html>
+
