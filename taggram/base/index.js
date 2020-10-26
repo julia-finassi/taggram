@@ -124,3 +124,7 @@
 
   initialize();
 })("https://taggram.herokuapp.com");
+
+function alerta() {
+  alert("Funcionalidade não implementada")
+}
